@@ -16,6 +16,8 @@ class AURA_API AAuraCharacter : public AAuraCharacterBase
 
 public:
 	AAuraCharacter();
+	virtual void PossessedBy(AController* NewController) override;
+	virtual void OnRep_PlayerState() override;
 	
 protected:
 	UPROPERTY(VisibleAnywhere, Category = "Player Camera")
@@ -23,4 +25,8 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, Category = "Player Camera")
 	USpringArmComponent* SpringArm;	
+
+private:
+	void InitAbilityActorInfo();
+
 };

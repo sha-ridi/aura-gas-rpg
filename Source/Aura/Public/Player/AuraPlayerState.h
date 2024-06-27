@@ -20,11 +20,12 @@ public:
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	UAuraAttributeSet* GetAttributeSet() const;
 
-protected:
 	UPROPERTY()
 	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent;
 
 	UPROPERTY()
 	TObjectPtr<UAuraAttributeSet> AttributeSet;	
+
+protected:
 	
 };
