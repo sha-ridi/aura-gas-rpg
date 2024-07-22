@@ -26,7 +26,6 @@ protected:
 	UPROPERTY(VisibleAnywhere, Category = "Player Camera")
 	USpringArmComponent* SpringArm;	
 
-private:
-	void InitAbilityActorInfo();
+	virtual void InitAbilityActorInfo() override;
 
 };
